@@ -1,0 +1,1343 @@
+en:
+  title: "Discourse"
+  topics: "Wątki"
+
+  is_reserved: "zastrzeżone"
+  too_many_mentions: "wymienia zbyt wielu użytkowników"
+  too_many_images: "zawiera zbyt wiele obrazów"
+  too_many_links: "zawiera zbyt wiele odnośników"
+  just_posted_that: "jest zbyt podobny do ostatnio wysłanego"
+  has_already_been_used: "już został użyty"
+  invalid_characters: "zawiera nieprawidłowe znaki"
+  is_invalid: "jest nieprawidłowy; postaraj się podać lepszy opis"
+
+  activerecord:
+    attributes:
+      category:
+        name: "Nazwa kategorii"
+      post:
+        raw: "Treść"
+    errors:
+      models:
+        topic:
+          attributes:
+            archetype:
+              cant_send_pm: "Nie możesz wysłać prywatnej wiadomości do tego użytkownika."
+
+  user_profile:
+    no_info_me: "<div class='missing-profile'>pole O mnie w Twoim profilu jest obecnie puste, <a href='/users/%{username_lower}/preferences'>czy chcesz je wypełnić w tej chwili?</a></div>"
+    no_info_other: "<div class='missing-profile'>%{name} nie wprowadził jeszcze nic w polu O mnie w swoim profilu</div>"
+
+  category:
+    topic_prefix: "Definicja kategorii dla %{category}"
+
+  trust_levels:
+    new:
+      title: "nowy użytkownik"
+    basic: 
+      title: "zwykły użytkownik"
+    regular:
+      title: "podstawowy użytkownik"
+    experienced:
+      title: "doświadczony użytkownik"
+    advanced:
+      title: "zaawansowany użytkownik"
+    moderator:
+      title: "moderator"
+
+  rate_limiter:
+    too_many_requests: "Robisz to zbyt często. Zaczekaj %{time_left} nim zrobisz to ponownie."
+    hours:
+      one: "1 godzinę"
+      other: "%{count} godzin"
+    minutes:
+      one: "1 minutę"
+      other: "%{count} minut"
+    seconds:
+      one: "1 sekundę"
+      other: "%{count} sekund"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "< 1 min."   
+      less_than_x_seconds:
+        one:   "< 1 sek."
+        other: "< %{count} sek."
+      x_seconds:
+        one:   "1 sek."
+        other: "%{count} sek."
+      less_than_x_minutes:
+        one:   "< 1 min."
+        other: "< %{count} min."
+      x_minutes:
+        one:   "1 min."
+        other: "%{count} min."
+      about_x_hours:
+        one:   "1 godz."
+        other: "%{count} godz."
+      x_days:
+        one:   "1 dzień"
+        other: "%{count} dni"
+      about_x_months:
+        one:   "1 miesiąc"
+        other: "%{count} miesiąc"
+      x_months:
+        one:   "1 miesiąc"
+        other: "%{count} miesięcy"
+      about_x_years:
+        one:   "1 rok"
+        other: "%{count} lat"
+      over_x_years:
+        one:   "> 1 rok"
+        other: "> %{count} lat"
+      almost_x_years:
+        one:   "1 rok"
+        other: "%{count} lat"
+
+    distance_in_words_verbose:
+      half_a_minute: "właśnie teraz"   
+      less_than_x_seconds:
+        one:   "teraz"
+        other: "teraz"
+      x_seconds:
+        one:   "1 sekundę temu"
+        other: "%{count} sekund temu"
+      less_than_x_minutes:
+        one:   "less than 1 minutę temu"
+        other: "less than %{count} minut temu"
+      x_minutes:
+        one:   "1 minutę temu"
+        other: "%{count} minut temu"
+      about_x_hours:
+        one:   "1 godzinę temu"
+        other: "%{count} godzin temu"
+      x_days:
+        one:   "1 dzień temu"
+        other: "%{count} dni temu"
+      about_x_months:
+        one:   "about 1 miesiąc temu"
+        other: "about %{count} miesięcy temu"
+      x_months:
+        one:   "1 miesiąc temu"
+        other: "%{count} miesiecy temu"
+      about_x_years:
+        one:   "about 1 rok temu"
+        other: "about %{count} miesięcy temu"
+      over_x_years:
+        one:   "over 1 rok temu"
+        other: "over %{count} lat temu"
+      almost_x_years:
+        one:   "almost 1 rok temu"
+        other: "almost %{count} lat temu"
+
+  password_reset:
+    no_token: "Twój token wygasł. Spróbuj ponownie zresetować hasło."
+    choose_new: "Podaj nowe hasło"
+    update: 'aktualizuj hasło'
+    title: 'resetuj hasło'
+    success: "Zmieniłeś hasło i zostałeś zalogowany."
+    success_unapproved: "Udało Ci się zmienić Twoje hasło."
+
+  change_email:
+    confirmed: "Twój adres email został zaktualizowany."
+    please_continue: "Kontynuuj do %{link}"
+    error: "Wystąpił błąd podczas zmiany Twojego adresu email. Być może ten adres jest już używany?"
+
+  activation:
+    already_done: "Odnośnik potwierdzający dla tego konta wygasł. Być może Twoje konto już zostało aktywowane?"
+    please_continue: "Twoje nowe konto zostało potwierdzone, zostałeś zalogowany. Kontynuuj do %{link}"
+    welcome_to: "Witaj w %{site_name}!"
+    approval_required: "Moderator musi ręcznie zatwierdzić Twoje nowe konto zanim będziesz mógł wejść na forum. Otrzymasz email po zatwierdzeniu konta."
+
+  post_action_types:
+    
+    off_topic:
+      title: 'Inne tematy'
+      description: 'Ten wpis nie dotyczy tego wątku i powinien zapewne zostać przesunięty do innego wątku.'
+      long_form: 'oznaczył to jako nie na temat'
+    spam:
+      title: 'Spam'
+      description: 'Ten wpis jest po prostu reklamą bez odpowiedniego ostrzeżenia. Nie jest użyteczny i nie dotyczy wątku.'
+      long_form: 'oznaczył to jako spam'
+    inappropriate:
+      title: 'Nieodpowiedni'
+      description: 'Ten wpis zawiera treści które są powszechnie uważane za obraźliwe lub szerzące nienawiść.'
+      long_form: 'oznaczył to jako nieodpowiedni'
+    custom_flag:
+      title: 'Inne'
+      description: 'Ten wpis wymaga analizy przez moderatora zgodnie z <a href="/faq">FAQ</a>, <a href="/tos">TOS</a>, lub z innego powodu tutaj niewymienionego.'
+      long_form: 'oznaczył to jako do moderacji'
+    bookmark:
+      title: 'Zakładka'
+      description: 'Dodaj do zakładek'
+      long_form: 'dodał ten wpis do zakładek'
+    like:
+      title: 'Lubię'
+      description: 'Lubię ten wpis'
+      long_form: 'lubi to'
+
+  flagging:
+    you_must_edit: '<p>Twój wpis został oflagowany. Sprawdź swoje prywatne wiadomości.</p>'
+    user_must_edit: '<p>Ukryto oflagowane treści.</p>'
+
+  archetypes:
+    regular: 
+      title: "Zwykły wpis"
+
+  unsubscribed:
+    title: 'Wyłączono subskrypcję'
+    description: "Wyłączono subskrypcję. Nie będziemy więcej wysyłać wiadomości w tej kwestii!"
+    oops: "Jeśli nie zamierzałeś tego zrobić, kliknij poniżej."
+    not_found: "Nie udało się wyłączyć subskrypcji"
+    not_found_description: "Nie udało się wyłączyć subskrypcji. Możliwe że odnośnik wygasł."
+
+  resubscribe:
+    action: "Ponownie subskrybuj"
+    title: "Ponownie włączono subskrypcję!"
+    description: "Ponownie włączono subskrypcję."
+
+  site_settings:
+    min_post_length: "minimalna długość wpisu"
+    max_post_length: "maksymalna długość wpisu"
+    min_topic_title_length: "minimalna długość tytułu wątku"
+    max_topic_title_length: "maksymalna długość tytułu wątku"
+    allow_duplicate_topic_titles: "czy użytkownicy mogą Tworzyć wątku o takich samych tytułach"
+    unique_posts_mins: "Ile minut musi upłynąć nim użytkownik będzie mógł wysłać wpis o takiej samej treści"
+    enforce_global_nicknames: "Wymuszaj niepowtarzalność pseudonimów. Uwaga: Zmieniaj tą opcję tylko podczas pierwszej konfiguracji."
+    discourse_org_access_key: "Klucz dostępu używany do dostępu rejestru pseudonimów discourse.org"
+
+    title: "tytuł tej witryny"
+    secret_token: "tajny token używany do zabezpieczania ciasteczek"
+    restrict_access: "zablokuj dostęp do forum bez podania tego hasła"
+    access_password: "restrict_access (blokuj dostęp) jest włączone, upewnij się że wprowadzono to hasło"
+    queue_jobs: "kolejkuj różne zadania w sidekiq, jeśli wyłączone kolejki są wewnętrzne"
+    crawl_images: "włącz pobieranie obrazów z innych serwerów"
+    ninja_edit_window: "jak szybko możesz edytować bez zapisania zmian jako nowej wersji"
+    enable_imgur: "włącz api imgur dla wysyłania plików, nie hostuj plików lokalnie"
+    imgur_api_key: "klucz api imgur.com - wymagane dla wysyłania obrazów na serwer"
+    imgur_endpoint: "miejsce docelowe dla obrazów wysyłanych na imgur.com "
+    max_image_width: "maksymalna szerokość obrazu we wpisie"
+    category_featured_topics: "liczba wątków wyświetlanych na liście kategorii"
+    popup_delay: "Czas w milisekundach zanim wyskakujące okna zaczną się pojawiać"
+    add_rel_nofollow_to_user_content: "Dodaj rel nofollow do wszelkiej treści umieszczanej przez użytkowników, oprócz wewnętrznych odnośników (włączając w to nadrzędne domeny) , zmiana tego ustawienia pociąga za sobą konieczność aktualizacji całego Twojego kodu napisanego w statycznym markdown"
+    exclude_rel_nofollow_domains: "Lista domen rozdzielonych przecinkami gdzie nie dodano nofollow (tld.com automatycznie zezwoli na sub.tld.com)"
+    post_excerpt_maxlength: "Maksymalna długość (w znakach) wycinku wpisu."
+    post_onebox_maxlength: "Maksymalna długość wpisu w polu one box."
+    category_post_template: "Wzorzec wpisu który pojawia się po utworzeniu kategorii"
+    new_topics_rollup: "Jak wiele wątków może zostać wstawione na liście wątków przed jej paginacją."
+    onebox_max_chars: "Maksymalna liczba znaków które pole uniwersalne zaimportuje do skróconej treści."
+    logo_url: "Logo dla Twojej strony, np. http://xyz.com/x.png"
+    logo_small_url: "Małe logo dla Twojej strony (pokazywane na stronach wątku) np. http://xyz.com/x.png"
+    favicon_url: "Favikona Twojej strony"
+    notification_email: "Adres email używany do powiadamiania użytkowników podczas resetowania haseł, wysyłania informacji o rejestracji itp."
+    use_ssl: "Czy strona ma być dostępna przez SSL (https://) ?"
+    best_of_score_threshold: "Minimalna ocena kwalifikująca wpis do 'listy najlepszych'"
+    best_of_posts_required: "Wątek musi mieć tyle wpisów nim włączony zostanie tryb 'lista najlepszych' ."
+    best_of_likes_required: "Wątek musi być polubiony tyle razy nim włączony zostanie tryb 'lista najlepszych'."
+    enable_private_messages: "Pozwól użytkownikom tworzyć prywatne wiadomości i konwersacje"
+
+    enable_long_polling: "Szyna wiadomości używana dla powiadomień może używać odpytywania long polling."
+    long_polling_interval: "Interwał w milisekundach nim wysłane zostanie kolejne zapytanie long poll "
+
+    polling_interval: "Jak często klient ma odpytywać (w milisekundach)"
+    anon_polling_interval: "Jak często anonimowi klienci powinni odpytywać (w milisekundach)."
+
+    auto_track_topics_after: "Jak wiele milisekund musi upłynąć, nim wątek będzie automatycznie śledzony (0 jeśli zawsze, -1 jeśli nigdy)"
+
+    flags_required_to_hide_post: "Wpisy będą automatycznie ukrywane po tym jak liczba flah osiągnie tą wartość (0 jeśli nigdy)"
+    cooldown_minutes_after_hiding_posts: "Ile minut użytkownik musi poczekać nim będzie mógł edytować swój wpis po jego ukryciu z powodu oflagowania"
+
+    traditional_markdown_linebreaks: "Użyj tradycjnych przełamań linii w markdown, zawijanie wierszy działa o ile nie kończy się ciągu dwiema spacjami"
+    post_undo_action_window_mins: "Okno w którym ktoś może odwrócić operację na wpisie (taką jak polubienie)"
+    must_approve_users: "Właściciele forum muszą zatwierdzać użytkowników nim będą oni mieli dostęp do forum."
+    ga_tracking_code: "Kod śledzenia Google analytics , zobacz: http://google.com/analytics"
+    top_menu: "Kolejność pozycji w górnym menu. Przykład popularne|przeczytane|ulubione|nieprzeczytane|nowe|wysłane|kategorie"
+    post_menu: "Kolejność pozycji w menu wpisu."
+    max_length_show_reply: "Osadzone odpowiedzi nie zostaną pokazane jeśli mają długość mniejszą niż ta."
+    track_external_right_clicks: "Śledź zewnętrzne odnośniki które kliknięto prawym przyciskiem (np. otwóz w nowej karcie) - jest domyślnie wyłączone ponieważ musi przepisywać URLe, co obniży funkcjonalność"
+    topics_per_page: "Ile wątków ma zostać wyświetlone na liście wątków."
+    posts_per_page: "Ile wpisów ma być wyświetlane na stronie wątku"
+    system_username: "Nazwa użytkownika wysyłająca wiadomości systemowe"
+    send_welcome_message: "Czy nowi użytkownicy otrzymują prywatną wiadomość powitalną?"
+    
+    allow_index_in_robots_txt: "Serwis powinien być indeksowany przez wyszukiwarki(aktualizuj robots.txt)"
+
+    port: "Jeśli chcesz podać port w adresie URL. Użyteczne podczas projektowania. Pozostaw puste jeśli nie chcesz podać portu."
+    force_hostname: "Jeśli chcesz podać nazwę hosta w adresie URL. Użyteczne podczas projektowania. Pozostaw puste jeśli nie chcesz podać nazwy hosta."
+
+    invite_expiry_days: "Ile dni ważne są zaproszenia."
+
+    # TODO: perhaps we need a way of protecting these settings for hosted solution, global settings ...
+    twitter_consumer_key: "klucz klienta zarejestrowanego na dev.twitter.com (używany do autoryzacji twitter )"
+    twitter_consumer_secret: "sekret klienta zarejestrowanego na dev.twitter.com (używany do autoryzacji twitter )"
+
+    facebook_app_id: "app id, zarejestrowany na https://developers.facebook.com/apps (używany do autoryzacji facebook )"
+    facebook_app_secret: "sekret aplikacji, zarejestrowany na https://developers.facebook.com/apps (używany do autoryzacji facebook )"
+
+    allow_import: "Zezwól na import, co zastąpi wszystkie dane na stronie. Ustaw na wyłączone chyba że chcesz importować."
+
+    active_user_rate_limit_secs: "Jak często aktualizować pole 'last_seen_at' (w sekundach)."
+    previous_visit_timeout_hours: "Jak długo powinna trwać wizyta, nim uznamy ją za 'poprzednią' (w godzinach)."
+
+    uncategorized_name: "Nazwa dla wątków na liście kategorii które nie mają przypisanej kategorii"
+    max_mentions_per_post: "Maksymalna liczba @notifications (powiadomień) które możesz dodać do wpisu"
+
+    rate_limit_create_topic: "Ile sekund musi upłynąć nim będziesz mógł załozyć kolejny wątek"
+    rate_limit_create_post: "Ile sekund musi upłynąć nim możesz dodać kolejny wpis"
+
+    max_likes_per_day: "Maksymalna liczba polubień użytkownik może dodać jednego dnia"
+    max_flags_per_day: "Maksymalna liczba flag użytkownik może dodać jednego dnia"
+    max_bookmarks_per_day: "Maksymalna liczba zakładek użytkownik może dodać jednego dnia"
+    max_edits_per_day: "Maksymalna liczba edycji użytkownik może wykonać jednego dnia"
+    max_favorites_per_day: "Maksymalna liczba wątków które mogą zostać dodane do ulubionych jednego dnia"
+    max_topics_per_day: "Maksymalna liczba wątków którą możesz dodać jednego dnia"
+    max_private_messages_per_day: "Maksymalna liczba prywatnych wiadomości którą możesz wysłać jednego dnia"
+
+    suggested_topics: "Ile sugerowanych wątków zobaczysz na dole strony wątku"
+
+    enable_s3_uploads: "Czy umieszczać wysłane pliki na s3"
+    s3_upload_bucket: "Komora do której chcemy wysyłać pliki na s3"
+
+    default_invitee_trust_level: "Domyślny poziom zaufania dla zaproszonych użytkowników"
+    default_trust_level: "Domyślny poziom zaufania dla użytkowników"
+
+    basic_requires_topics_entered: "Ile wątków użytkownik powinien dodać nim zostanie mu przydzielony podstawowy poziom"
+    basic_requires_read_posts: "Ile wpisów użytkownik powinien przeczytać nim zostanie mu przydzielony podstawowy poziom"
+    basic_requires_time_spent_mins: "Ile minut użytkownik powinien czytać wpisy nim zostanie mu przydzielony podstawowy poziom"
+
+    email_time_window_mins: "Ile minut mamy czekać przed wysłaniem użytkownikowi wiadomości, aby dać im szansę przeczytania jako pierwszy."
+    flush_timings_secs: "Jak często zapisujemy dane synchronizacji na serwerze (w sekundach)."
+
+    max_word_length: "Maksymalna długość tematu wątku (w słowach)"
+    title_min_entropy: "Minimalna entropia dla tematu wątku"
+    body_min_entropy: "Minimalna entropia dla treści wpisu"
+
+    email_blacklist_regexp: "Wyrażenie regularne wyszukujące adresy email do zablokowania"
+
+  # This section is exported to the javascript for i18n in the admin section
+  admin_js:
+    type_to_filter: "Typ do odfiltrowania..."
+
+    admin:      
+      title: 'Administrator Discourse '
+      dashboard: 'Admin Dashboard'
+
+      flags:
+        title: "Flagi"
+        old: "Stare"
+        active: "Aktywne"
+        clear: "Wyczyść flagi"
+        clear_title: "usuń wszystkie flagi tego wpisu (odkryje ukryte wpisy)"
+        delete: "Usuń wpis"
+        delete_title: "usuń wpis (jeśli to pierwszy wpis usuń wątek)"
+
+      customize: 
+        title: "Dostosuj"
+        header: "Nagłówek"
+        css: "Arkusz stylów"
+        override_default: "Zastąpić domyślne?"
+        enabled: "Włączone?"
+        preview: "podgląd"
+        undo_preview: "cofnij podgląd"
+        save: "Zapisz"
+        delete: "Usuń"
+        delete_confirm: "Usunąć to dostosowanie?"
+
+      email_logs:
+        title: "Logi Email "
+        sent_at: "Wysłano dnia"
+        email_type: "Typ Email "
+        to_address: "Na adres"
+        test_email_address: "adres email do testów"
+        send_test: "wyślij wiadomość testową"
+        sent_test: "wysłana!"
+
+      impersonate:
+        title: "Podaj się za użytkownika"
+        username_or_email: "Nazwa użytkownika lub email użytkownika"
+        help: "Użyj tego narzędzia aby podać się za użytkownika (dla celów debugowania)."
+        not_found: "Ten użytkownik nie został odnaleziony."
+        invalid: "Nie możesz podać się za tego użytkownika."
+
+      users:
+        title: 'Użytkownicy'
+        create: 'Dodaj administratora'
+        last_emailed: "Ostatnio wysłano do"
+        not_found: "Ta nazwa użytkownika nie istnieje w naszym systemie."
+        new: "Nowy"
+        active: "Aktywny"
+        pending: "Oczekuje na zatwierdzenie"
+        approved: "Zatwierdzony?"
+        approved_selected:
+          one: "zatwierdź użytkownika"
+          other: "zatwierdź użytkowników ({{count}})"
+
+      user:
+        ban_failed: "Banowanie użytkownika nie powiodło się {{error}}"
+        unban_failed: "Odbanowanie użytkownika nie powiodło się {{error}}"
+        ban_duration: "Na jak długo chcesz zbanować użytkownika? (dni)"
+        delete_all_posts: "Usuń wszystkie wpisy"
+        ban: "Banuj"
+        unban: "Odbanuj"
+        banned: "Zbanowany?"
+        moderator: "Moderator?"
+        admin: "Administrator?"
+        show_admin_profile: "Admin"
+        refresh_browsers: "Wymuś odświeżenie przeglądarki"
+        show_public_profile: "Pokaż publiczny profil"
+        impersonate: 'Podaj się za'
+        revoke_admin: 'Usuń uprawnienia administracyjne'
+        grant_admin: 'Nadaj uprawnienia administracyjne'
+        basics: Podstawy
+        reputation: Reputacja
+        permissions: Uprawnienia
+        activity: Aktywność
+        like_count: Polubienia
+        private_topics_count: Liczba prywatnych wątków
+        posts_read_count: Przeczytane wpisy
+        post_count: Utworzone wpisy
+        topics_entered: Dodane wątki
+        flags_given_count: Nadane flagi
+        flags_received_count: Uzyskane flagi
+        approve: 'Zatwierdź'
+        approved_by: "zatwierdzony przez"
+        time_read: "Czas przeczytania"
+
+      site_settings:
+        show_overriden: 'Pokaż tylko nadpisane'
+        title: 'Ustawienia strony'
+        reset: 'resetuj do wartości domyślnych'
+
+  notification_types:
+    mentioned: "%{display_username} napisał o Tobie w %{link}"
+    liked: "%{display_username} polubił Twój wpis w %{link}"
+    replied: "%{display_username} odpowiedział na Twój wpis w %{link}"
+    quoted: "%{display_username} zacytował Twój wpis w %{link}"
+    edited: "%{display_username} wyedytował Twój wpis w %{link}"
+    posted: "%{display_username} dodał wpis w %{link}"
+    moved_post: "%{display_username} przesunął Twój wpis do %{link}"
+    private_message: "%{display_username} wysłał Ci prywatną wiadomość: %{link}"
+    invited_to_private_message: "%{display_username} zaprosił Cię do napisania prywatnej wiadomości: %{link}"
+    invitee_accepted: "%{display_username} zaakceptował Twoje zaproszenie"
+
+  # This section is exported to the javascript for i18n
+  js:
+    share: 
+      topic: 'Podziel się odnośnikiem do tego wątku' 
+      post: 'Podziel się odnośnikiem do tego wpisu' 
+
+    edit: 'edytuj tytuł i kategorię tego tematu'
+    not_implemented: "Ta opcja jeszcze nie jest dostępna!"
+    no_value: "Nie"
+    yes_value: "Tak"
+    of_value: "z"
+    generic_error: "Wystąpił błąd."
+    log_in: "Zaloguj"
+    age: "Wiek"
+    last_post: "Ostatni wpis"
+    admin_title: "Admin"
+    flags_title: "Flagi"
+    show_more: "pokaż więcej"
+    links: Odnośniki
+    faq: "FAQ"
+    you: "Ty"
+
+    suggested_topics:
+      title: "Sugerowane wątki"
+
+    bookmarks:
+      not_logged_in: "Musisz być zalogowany aby dodać ten wpis do zakładek."
+      created: "Dodałeś ten wpis do zakładek."
+      not_bookmarked: "Przeczytałeś ten wpis; kliknij aby dodać go do zakładek."
+      last_read: "To ostatni post który przeczytałeś."
+
+    new_topics_inserted: "{{count}} nowych wątków."
+    show_new_topics: "Kliknij aby pokazać."
+    preview: "podgląd"
+    cancel: "anuluj"
+
+    save: "Zapisz zmiany"
+    saving: "Zapisywanie..."
+    saved: "Zapisano!"
+
+    user:
+      information: "Informacje o użytkowniku"
+      profile: Profik
+      title: "Użytkownik"
+      mute: Wyłącz
+      edit: Edytuj ustawienia
+      download_archive: "pobierz archiwum moich wpisów"
+      private_message: "Prywatne wiadomości"
+      private_messages: "Wiadomości"
+      activity_stream: "Aktywność"
+      preferences: "Ustawienia"
+      bio: "O mnie"
+      change_password: "zmień hasło"
+      invited_by: "Zaproszony przez"
+      trust_level: "Poziom zaufania"
+
+      change_username: 
+        action: "zmień nazwę użytkownika"
+        title: "Zmiana nazwy użytkownika"
+        confirm: "Zmiana nazwy użytkownika może pociągnąć za sobą różne konsekwencje. Czy na pewno chcesz to zrobić?"
+        taken: "Ta nazwa użytkownika jest już używana."
+        error: "Wystąpił błąd podczas zmiany Twojej nazwy użytkownika."
+        invalid: "Ta nazwa użytkownika jest niepoprawna. Może zawierać jedynie litery i cyfry"
+      change_email:
+        action: 'zmiana adresu email'
+        title: "Zmiana adresu email"
+        taken: "Ten adres email nie jest dostępny."
+        error: "Wystąpił błąd podczas zmieniania adresu email. Być może ten adres jest już używany?"
+        success: "Wysłaliśmy wiadomość email na ten adres. Postępuj zgodnie z instrukcjami dotyczacymi potwierdzenia."
+
+      email: 
+        title: "Email"
+        instructions: "Twój adres email nie będzie nigdy publicznie wyświetlany."
+        ok: "Chyba wszystko się zgadza. Wyślemy Ci wiadomość email do potwierdzenia."
+        invalid: "Podaj poprawny adres email."
+        authenticated: "Twój adres email został zautoryzwaony przez {{provider}}."
+        frequency: "Będziemy wysyłać do Ciebie wiadomości tylko jeśli nie będziesz dostępny przez jakiś czas oraz jeśli nie widziałeś już wcześniej informacji których dotyczy wiadomość."
+
+      name: 
+        title: "Nazwa"
+        instructions: "Dłuższa wersja Twojej nazwy; nie musi być unikalna."
+        too_short: "Twoje imię jest za krótkie."
+        ok: "Twoje imię spełnia wymagania."
+      username: 
+        title: "Nazwa użytkownika"
+        #instructions: "Ludzie mogą napisać o Tobie jako o @{{username}}. To niezarejestrowany pseudonim. Możesz zarejestrować je na stronie <a href='http://discourse.org'>discourse.org</a>."
+        instructions: "Ludzie mogą napisać o Tobie jako o @{{username}}."
+        available: "Twoja nazwa użytkownika jest dostępna."
+        global_match: "Email pasuje do zarejestrowanej nazwy użytkownika."
+        global_mismatch: "Already registered. Try {{suggestion}}?"
+        not_available: "Niedostępny. Spróbuj {{suggestion}}?"
+        too_short: "Twoja nazwa użytkownika jest za krótka."
+        too_long: "Twoja nazwa użytkownika jest za długa."
+        checking: "Sprawdzanie dostępności nazwy użytkownika..."
+        enter_email: 'Znaleziono nazwę użytkownika. Podaj pasujący adres email.'
+
+      last_posted: "Ostatni wpis"
+      last_emailed: "Ostatnia wiadomość email do"
+      last_seen: "Ostatni odwiedzający"
+      created: "Utworzone o"
+      log_out: "Wyloguj"
+      website: "Strona"
+      email_settings: "Email"
+      email_digests: 
+        title: "Odbieraj informacje o nowościach przez email"
+        daily: "codziennie"
+        weekly: "co tydzień"
+        bi_weekly: "co dwa tygodnie"
+
+      email_direct: "Odbieraj wiadomości po tym jak ktoś Cię zacytuje, odpowie na Twój wpis, lub wspomni o Twojej nazwie użytkownika @username"
+      email_private_messages: "Odbieraj wiadomość po tym jak ktoś wyśle Co prywatną wiadomość"
+
+      other_settings: "Inne"
+      auto_track_topics: "Autoamatycznie śledź utworzone wątki"
+      auto_track_options:
+        never: "nigdy"
+        always: "zawsze"
+        after_n_seconds:
+          one: "po 1 sekundzie"
+          other: "po {{count}} sekundach"
+        after_n_minutes:
+          one: "po jednej minucie"
+          other: "po {{count}} minutach"
+
+      invited: 
+        title: "Zaproszenia"
+        user: "Zaproszony użytkownik"
+        none: "{{username}} nie zaprosił jeszcze żadnych użytkowników na stronę."
+        redeemed: "Odebrane zaproszenia"
+        redeemed_at: "Odebrano o"
+        pending: "Oczekujące zaproszenia"
+        topics_entered: "Utworzone wątki"
+        posts_read_count: "Przeczytane wpisy"
+        rescind: "Usuń zaproszenie"
+        rescinded: "Zaproszenie usunięte"
+        time_read: "Czas czytania"
+        days_visited: "Dni odwiedzin"
+        account_age_days: "Wiek konta w dniach"
+
+      password: 
+        title: "Hasło"
+        too_short: "Twoje hasło jest za krótkie."
+        ok: "Twoje hasło spełnia wymagania."
+
+      ip_address: 
+        title: "Ostatni adres IP "
+      avatar: 
+        title: "Awatar"
+        instructions: "Używamy <a href='https://gravatar.com' target='_blank'>Gravatara</a> dla awatarów opartych o Twój email"
+
+      filters:
+        all: "Wszystkie"        
+
+    loading: "Ładowanie..."
+    close: "Zamknij"
+    learn_more: "dowiedz się więcej..."
+
+    year: 'rok'
+    year_desc: 'wątku utworzone w ciągu ostatniego roku'
+    month: 'miesiąc'
+    month_desc: 'wątki utworzone w ciągu ostatnich 30 dni'
+    week: 'tydzień'
+    week_desc: 'wątki utworzone w ciągu ostatniego tygodnia'
+
+    first_post: Pierwszy wpis
+    mute: Wyłącz
+    unmute: Włącz
+    last_post: Ostatni wpis
+
+    best_of:
+      title: "Najlepsze"
+      description: "W wątku jest <b>{{count}}</b> wpisów. To dużo! Czy chcesz oszczędzić czas przez przełączenie widoku tak by pokazywane były tylko wpisy z największa ilością odpowiedzi i interakcji?"
+      button: 'Przełącz do widoku "Lista najlepszych"'
+
+    private_message_info:
+      title: "Prywatne konwersacje"
+      description: "Uczestnicy tej prywatnej konwersacji"
+      invite: "Zaproś innych..."
+
+    email: 'Email'
+    username: 'Nazwa użytkownika'
+    last_seen: 'Ostatnie odwiedziny'
+    created: 'Utworzone'
+    trust_level: 'Poziom zaufania'
+
+    create_account:
+      title: "Utwórz konto"
+      action: "Utwórz jedno teraz!"
+      invite: "Nie masz jeszcze konta?"
+      failed: "Wystąpił błąd, być może ten email jest już zarejestrowany, spróbuj odnośnika Zapomniałem hasłą"
+
+    forgot_password: 
+      title: "Zapomniałem hasła"
+      action: "Zapomniałem hasłą"
+      invite: "Podaj swoją nazwę użytkownika lub adres email a wyślemy Ci wiadomość email."
+      reset: "Reset hasła"
+      complete: "Powinieneś otrzymać email z instrukcjami jak zresetować swoje hasło."
+
+    login:
+      title: "Zaloguj"
+      username: "Login"
+      password: "Hasło"
+      email_placeholder: "adres email lub nazwa użytkownika"
+      error: "Nieznany błąd"
+      reset_password: 'Reset hasła'
+      logging_in: "Logowanie..."
+      or: "Lub"
+      authenticating: "Autoryzowanie..."
+      awaiting_confirmation: "Twoje konto czeka na aktywację, użyj odnośnika Zapomniałęm hasła aby wysłać kolejną wiadomość aktywacyjną."
+      awaiting_approval: "Twoje konto nie zostało jeszcze zatwierdzone przez moderatora. Otrzymasz email po zatwierdzeniu konta."
+      google:
+        title: "Zaloguj do konta Google"
+        message: "Autoryzowanie do konta Google (upewnij się że blokada wyskakujących okien jest wyłączona)"
+      twitter:
+        title: "Zaloguj do Twittera"
+        message: "Autoryzowanie do konta Twitter (upewnij się że blokada wyskakujących okien jest wyłączona)"
+      facebook:
+        title: "Zaloguj do Facebookaa"
+        message: "Autoryzowanie do konta Facebook (upewnij się że blokada wyskakujących okien jest wyłączona)"
+      yahoo:
+        title: "Zaloguj do Yahoo"
+        message: "Autoryzowanie do konta Yahoo (upewnij się że blokada wyskakujących okien jest wyłączona)"
+
+    composer:
+      saving_draft_tip: "zapisywanie"  
+      saved_draft_tip: "zapisano"  
+      saved_local_draft_tip: "zapisano lokalnie"  
+
+      save_edit: "Zapisz edycję"  
+      reply: "Odpowiedz"
+      create_topic: "Utwórz wątek"
+      create_pm: "Utwóz prywatną wiadomość"
+
+      users_placeholder: "Dodaj użytkownika"
+      title_placeholder: "Podaj tutaj tytuł wątku. Streść w jednym zdaniu czego dotyczy dyskusja?"
+      reply_placeholder: "Wpisz swoją odpowiedź. Użyj Markdown lub BBCode aby sformatować. Przeciągnij lub wklej obrazek aby go wysłać."
+      view_new_post: "Zobacz swój nowy wpis."
+      saving: "Zapisywanie..."
+      saved: "Zapisano!"
+      saved_draft: "Posiadasz szkic wpisu. Kliknij gdziekolwiek w tym polu aby dokończyć pisanie."
+      uploading: "Wysyłanie..."
+      show_preview: 'wyświetl podgląd &raquo;'
+      hide_preview: '&laquo; ukryj podgląd'
+
+    notifications:
+      title: "powiadomienia o wzmiankach nt. @name , odpowiedzi na Twoje wpisy i wątki, prywatne wiadomości itp."
+      none: "Nie masz obecnie żadnych powiadomień."
+      more: "wyświetl starsze powiadomienia"
+      mentioned: "{{username}} wspomniał o Tobie w {{link}}"
+      quoted: "{{username}} zacytował Ciebie w {{link}}"
+      replied: "{{username}} odpowiedział Ci w {{link}}"
+      posted: "{{username}} odpowiedział na {{link}}"
+      edited: "{{username}} edytował Twój wpis {{link}}"
+      liked: "{{username}} polubił Twój wpis {{link}}"
+      private_message: "{{username}} wysłał Ci prywatną wiadomosć: {{link}}"
+      invited_to_private_message: "{{username}} Zaprosił Cię do prywatnej konwersacji: {{link}}"
+      invitee_accepted: "{{username}} zaakceptował Twoje zaproszenie i zapisał się na listę uczestników."
+      moved_post: "{{username}} przesunął Twój wpis do {{link}}"
+
+    image_selector:
+      from_my_computer: "Z mojego urządzenia"
+      from_the_web: "Z sieci"
+      add_image: "Dodaj obraz"
+      remote_tip: "podaj adres obrazu w formie http://example.com/image.jpg"
+      local_tip: "kliknij aby wybrać obraz ze swojego urządzenia."
+      upload: "Wyślij"
+
+    search: 
+      title: "wyszukaj wątki, wpisy, użytkowników lub kategorie"
+      placeholder: "podaj tutaj swoje kryteria wyszukiwania"
+      no_results: "Nic nie znaleziono."
+      searching: "Wyszukiwanie..."
+
+    site_map: "przejdź do następnej listy wątków lub kategorii"
+    go_back: 'wróć'
+    current_user: 'przejdź do swojej strony użytkownika'
+
+    favorite:
+      title: 'Ulubiony'
+      help: 'dodaj ten wątek do listy ulubionych'
+
+    topics: 
+      no_favorited: "Nie dodałeś nic do ulubionych. Aby dodać do ulubionych, kliknij na gwiazdkę obok tytułu."
+      no_unread: "Nie masz nieprzeczytanych wątków."
+      no_new: "Nie masz nowych wątków do przeczytania."
+      no_read: "Nie przeczytałeś jeszcze żadnych wątków."
+      no_posted: "Nie napisałeś jeszcze nic w żadnym wątku."
+      no_popular: "Brak popularnych wątków."
+
+    topic:      
+      create_in: 'Utwórz wątek w kategorii {{categoryName}} '
+      create: 'Utwórz wątek'
+      create_long: 'Utwórz nowy wątek'
+      private_message: 'Rozpocznij nową prywatną konwersację'
+      list: 'Wątki'
+      new: 'nowy wątek'
+      title: 'Wątek'
+      loading_more: "Ładowanie więcej wątków..."
+      loading: 'Ładowanie wątku...'
+      missing: "Wątek nie został znaleziony"
+      not_found:
+        title: "Wątek nie został znaleziony"
+        description: "Nie znaleziono tego wątku. Być może zostal usunięty?"
+      unread_posts: "masz {{unread}} nieprzeczytanych wpisów w tym wątku"
+      new_posts: "pojawiło się {{new_posts}} nowych wpisów w tym wątku odkąd ostatnio go czytałeś"
+      likes: "wątek polubiono {{likes}} razy"
+      back_to_list: "Wróć do listy wątków"
+      options: "Opcje wątku"
+      show_links: "pokazuj odnośniki w tym wątku"
+      toggle_information: "włącz/wyłącz szczegóły wątku"
+      read_more_in_category: "Chcesz przeczytać więcej? Przejrzyj inne wątki w {{catLink}} lub {{popularLink}}."
+      read_more: "Chcesz przeczytać więcej? {{catLink}} lub {{popularLink}}."
+      browse_all_categories: Przejrzyj wszystkie kategorie
+      view_popular_topics: wyświetl popularne wątki
+
+      progress:
+        title: postęp wątku
+        jump_top: przejdź do pierwszego wpisu
+        jump_bottom: przejdź do ostatniego wpisu
+        total: ogółem wpisów
+        current: obecny wpis
+
+      notifications:
+        title: ''
+        reasons:
+          "3_2": 'Będziesz otrzymywać powiadomienia ponieważ obserwujesz ten wątek.'
+          "3_1": 'Będziesz otrzymywać powiadomienia ponieważ stworzyłeś ten wątek.'
+          "2_4": 'Będziesz otrzymywać powiadomienia ponieważ dodałeś odpowiedź do tego wątku.'
+          "2_2": 'Będziesz otrzymywać powiadomienia ponieważ śledzisz ten wątek.'
+          "2": 'Będziesz otrzymywać powiadomienia ponieważ <a href="/users/{{username}}/preferences">czytasz ten wątek</a>.'
+          "1": 'Otrzymasz powiadomienie tylko jeśli ktoś wspomni Twoją nazwę @name lub odpowie na Twój wpis.'
+          "1_2": 'Otrzymasz powiadomienie tylko jeśli ktoś wspomni Twoją nazwę @name lub odpowie na Twój wpis.'
+          "0": 'Ignorujesz wszelkie powiadomienia dot. tego wątku.'
+          "0_2": 'Ignorujesz wszelkie powiadomienia dot. tego wątku.'
+        watching: 
+          title: "Obserwowanie"
+          description: "zobaczysz liczbę nieprzeczytanych i nowych wpisów w tym wątku, oraz otrzymasz powiadomienia o tym że ktoś wspomniał o @name oraz powiadomienia o wszystkich nowych wpisach."
+        tracking:
+          title: "Sledzienie"
+          description: "zobaczysz liczbę nieprzeczytanych i nowych wpisów w tym wątku, oraz otrzymasz powiadomienia o tym że ktoś wspomniał o @name oraz powiadomienia o wszystkich odpowiedziach na Twoje wpisy."
+        regular:
+          title: "Zwykłe"
+          description: "zostaniesz powiadomiony tylko jeśli ktoś wspomni Twoją nazwę @name lub odpowie na Twój wpis."
+        muted:
+          title: "Wyłączone"
+          description: "nie otrzymasz żądnych powiadomień odnośnie tego wątku i nie pojawi się on w Twojej zakładce nieprzeczytanych."
+
+      actions:
+        delete: "Usuń wątek"
+        open: "Otwórz wątek"
+        close: "Zamknij wątek"
+        unpin: "Odepnij wątek"
+        pin: "Przypnij wątek"
+        unarchive: "Przenieś wątek z archiwum"
+        archive: "Przenieś wątek do archiwum"
+        invisible: "Ustaw jako niewidoczny"
+        visible: "Ustaw jako widoczny"
+        reset_read: "Resetuj dane czytania"
+        multi_select: "Włącz/wyłącz wielokrotnie zaznaczanie"
+        convert_to_topic: "Skonwertuj do zwykłego wątku"
+
+      reply: 
+        title: 'Odpowiedz'
+        help: 'napisz odpowiedź w tym wątku'
+
+      share: 
+        title: 'Udostępnij'
+        help: 'udostęnij odnośnik do tego wątku'
+
+      inviting: "Zapraszanie..."
+
+      invite_private:
+        title: 'Zaproś do prywatnej konwersacji'
+        email_or_username: "Adres email lub nazwa użytkownika zapraszanej osoby"
+        email_or_username_placeholder: "adres email lub nazwa użytkownika"
+        action: "Zaproś"
+        success: "Dziękujemy! Zaprosiliśmy tego użytkownika do udziału w tej prywatnej konwersacji."
+        error: "Wystąpił błąd podczas zapraszania tego użytkownika."
+
+      invite_reply: 
+        title: 'Zaproś przyjaciół aby odpowiedzieli'
+        help: 'wyślij zaproszenia do przyjaciół aby mogli odpowiedzieć na ten wątek pojedynczym kliknięciem'
+        email: "Wyślemy Twojemu znajomemu krótką wiadomość email która pozwoli mu odpowiedzieć na ten wątek przez kliknięcie w link."
+        email_placeholder: 'adres email' 
+        success: "Dziękujemy! Wysłaliśmy zaproszenie do <b>{{email}}</b>. Powiadomimy Cię kiedy zaproszenie zostanie odebrane. Sprawdzaj zakładkę zaproszenia na swoje stronie użytkownika aby śledzić kogo zaprosiłeś."
+        error: "Nie udało nam się zaprosić tej osoby. Być może jest już użytkownikiem?"
+
+      login_reply: 'Zaloguj się aby odpowiedzieć'
+
+      filters:
+        user: "Oglądasz tylko wpisy konkretnego użytkownika lub użytkowników."
+        best_of: "Oglądasz tylko wpisy z 'Listy najlepszych' ."
+        cancel: "Ponownie pokaż wszystkie wpisy z tego wątku."
+
+      move_selected:
+        title: "Przenieś zaznaczone wpisy"
+        topic_name: "Nazwa nowego wątku:"
+        error: "Wystąpił błąd podczas przenoszenia tych wpisów."
+        instructions: 
+          one: "Za chwilę utworzysz wątek z wpisów które zaznaczyłeś."
+          other: "Za chwilę utworzysz wątek z <b>{{count}}</b> wpisów które zaznaczyłeś."
+
+      multi_select:
+        select: 'zaznacz'
+        selected: 'zaznaczono ({{count}})'
+        delete: usuń zaznaczone
+        cancel: anuluj zaznaczenie
+        move: przenieś zaznaczone
+        description:
+          one: Zaznaczyłeś <b>1</b> wpis.
+          other: "Zaznaczyłeś <b>{{count}}</b> wpisy (wpisów)."
+
+    post:
+      reply: "Odpowiadanie na {{link}} przez {{replyAvatar}} {{username}}" 
+      reply_topic: "Odpowiedź na {{link}}"
+      edit: "Edytuj {{link}}"
+      in_reply_to: "w odpowiedzi na"
+      reply_as_new_topic: "Odpowiadz w nowym wątku"
+      continue_discussion: "Kontynuacja dyskusji z wpisu {{postLink}}:"
+      follow_quote: "przejdź do cytowanego wpisu"
+      deleted_by_author: "(wpis usunięty przez autora)"
+
+      has_replies:
+        one: "Odpowiedź"
+        other: "Odpowiedzi"
+
+      errors:
+        create: "Wystąpił błąd podczas dodawania wpisu. Spróbuj ponownie."
+        edit: "Wystąpił błąd podczas edycji wpisu. Spróbuj ponownie."
+        upload: "Wystąpił błąd podczas wysyłania pliku. Spróbuj ponownie."
+
+      abandon: "Czy na pewno chcesz zrezygnować z tego wpisu?"
+
+      archetypes:
+        save: 'Opcje zapisu'
+
+      controls:
+        reply: "rozpocznij pisanie odpowiedzi na ten wpis"
+        like: "polub ten wpis"
+        edit: "edytuj ten wpis"
+        flag: "oflaguj ten wpis dla moderatora"
+        delete: "usuń ten wpis"
+        undelete: "cofnij usunięcie tego wpisu"
+        share: "udostępnij odnośnik do tego wpisu"
+        bookmark: "dodaj zakładkę do tego wpisu na swojej stronie użytkownika"
+        more: "Więcej"
+
+      actions:
+        flag: 'Flaga'
+        clear_flags:
+          one: "Usuń flagę"
+          other: "Usuń flagi"
+        it_too: "{{alsoName}} też to"
+        undo: "Cofnij {{alsoName}}"
+        by_you_and_others:
+          zero: "Ty {{long_form}}"
+          one: "Ty i 1 inna osoba {{long_form}}"
+          other: "Ty i {{count}} innych osób {{long_form}}"
+        by_others:
+          one: "1 osoba {{long_form}}"
+          other: "{{count}} ludzi {{long_form}}"
+
+      edits: 
+        one: 1 edycja
+        other: "{{count}} edycji"
+        zero: brak edycji
+
+      delete:
+        confirm: 
+          one: "Czy na pewno chcesz usunąć ten wpis?"
+          other: "Czy na pewno chcesz usunąć wszystkie te wpisy?"
+
+    category:
+      none: '(bez kategorii)'
+      edit: 'edycja'
+      view: 'Wyświetl wątki w kategorii'
+      delete: 'Usuń kategorię'
+      create: 'Utwórz kategorię'
+      more_posts: "zobacz wszystkie {{posts}}..."
+      name: "Nazwa kategorii"
+      description: "Opis"
+      topic: "kategoria wątku"
+      color: "Kolor"
+      name_placeholder: "Powinno być krótkie i zwięzłe."
+      color_placeholder: "Dowolny kolor używany w sieci"
+      delete_confirm: "Czy na pewno chcesz usunąć tą kategorię?"
+      list: "Lista kategorii"
+
+    flagging:
+      title: 'Dlaczego dodajesz flagę do tego wpisu?'
+      action: 'Oflaguj wpis'
+      cant: "Nie możesz w tym momencie dodać flagi do tego wpisu."
+      custom_placeholder: "Dlaczego ten post wymaga analizy przez moderatora? Napisz co dokładnie zasługuje na uwagę i tam gdzie to możliwe podaj istotne dla sprawy odnośniki."
+      custom_message:
+        at_least: "wpisz przynajmniej {{n}} znaków"
+        more: "jeszcze {{n}} ..."
+        left: "{{n}} pozostało"
+
+    topic_summary:
+      title: "Podsumowanie wątku"
+      links_shown: "pokaż wszystkie {{totalLinks}} odnośniki..."
+
+    topic_statuses:
+      locked:
+        help: "ten wątek jest zamkniety; nie można już dodawać do niego odpowiedzi"
+      pinned:
+        help: "ten wątek jest przypięty; będzie wyświetlany na górze swojej kategorii"
+      archived:
+        help: "ten wątek znajduje się w archiwum; jest zamrożony i nie może zostać zmodyfikowany"
+      invisible:
+        help: "ten wątek jest ukryty; nie będzie wyświetlany na liście wątków i można się do niego dostać tylko przez odnośnik bezpośredni"
+
+    posts: "Wpisy"
+    posts_long: "{{number}} wpisów w tym wątku"
+    original_post: "Oryginalny wpis"
+    views: "Odsłon"
+    replies: "Odpowiedzi"
+    views_long: "ten wątek został wyświetlony {{number}} razy"
+    activity: "Aktywność"
+    likes: "Polubień"
+    top_contributors: "Uczestnicy"
+    category_title: "Kategoria"
+
+    categories_list: "Lista kategorii"
+
+    filters:
+      popular: 
+        title: "Popularne"
+        help: "najbardziej popularne nowe wątki"
+      favorited: 
+        title: "Ulubione"
+        help: "wątki które oznaczyłeś jako ulubione"
+      read: 
+        title: "Przeczytane"
+        help: "wątki które przeczytałeś"
+      categories: 
+        title: "Kategorie"
+        title_in: "Kategoria - {{categoryName}}"
+        help: "wszystkie wątki posortowane wg kategorii"
+      unread:
+        title: 
+          zero: "Nieprzeczytane"
+          one: "Nieprzeczytane(1)"
+          other: "Nieprzeczytane ({{count}})"
+        help: "śledzone wątki z nieprzeczytanymi wpisami"
+      new: 
+        title: 
+          zero: "Nowy"
+          one: "Nowy (1)"
+          other: "Nowe ({{count}})"
+        help: "nowe wątki od Twojej ostatniej wizyty, jak również śledzone wątki z nowymi wpisami"
+      posted:
+        title: "Moje wpisy"
+        help: "wątki w których dodałeś wpisy"
+      category:
+        title:
+          zero: "{{categoryName}}"
+          one: "{{categoryName}} (1)"
+          other: "{{categoryName}} ({{count}})"
+        help: "popularne wątki w kategorii {{categoryName}}"
+
+  search:
+    types:
+      category: 'Kategorie'
+      topic: 'Wątki'
+      user: 'Użytkownicy'   
+
+  youve_posted: "Dodałeś wpis"
+  original_poster: "Autor pierwszego wpisu"
+  most_posts: "Najwięcej wpisów"
+  most_recent_poster: "Autor ostatniego wpisu"
+  frequent_poster: "Często dodający wpisy"
+
+  user_action_descriptions:
+    bookmarks: "Zakładki"
+    topics: "Wątki"
+    likes_received: "Uzyskane polubienia"
+    likes_given: "Wysłane polubienia"
+    responses: "Odpowiedzi"
+    topic_responses: "Odpowiedzi na wątki"
+    posts: "Wpisy"
+    mentions: "Wzmnianki"
+    quotes: "Cytaty"
+    edits: "Edycje"
+    favorites: "Ulubione"
+    sent_items: "Wysłane"
+    inbox: "Skrzynka odbiorcza"
+
+    was_liked: "został polubiony"
+    liked: "polubiony"
+    bookmarked: "dodany do zakładek"
+    posted: "wysłany"
+    responded_to: "w odpowiedzi na"
+    mentioned: "wzmianka"
+    quoted: "zacytowany"
+    favorited: "dodany do ulubionych"
+    edited: "edytowany"
+
+  move_posts:
+    moderator_post: 
+      one: "Przeniosłem ten wpis do nowego wątku: %{topic_link}"
+      other: "Przeniosłem %{count} wpisy do nowego wątku : %{topic_link}"
+
+  topic_statuses:
+    archived_enabled: "Ten wątek przeniesiono do archiwum. Jest zamrożony i nie można go modyfikować."
+    archived_disabled: "Ten wątek przeniesiono z archiwum. Nie jest już zamrożony i można go edytować."
+    closed_enabled: "Ten wątek jest zamknięty. Nie można dodawać do niego nowych odpowiedzi."
+    closed_disabled: "Ten wątek jest otwarty. Można dodawać do niego nowe odpowiedzi."
+    pinned_enabled: "Ten wątek jest przypięty. Pojawi się na szczycie listy wątków swojej kategorii."
+    pinned_disabled: "Ten wątek został odpięty. Nie pojawi się już na szczycie listy wątków swojej kategorii."
+    visible_enabled: "Ten wątek jest teraz widoczny. Będzie wyświetlany na liście wątków."
+    visible_disabled: "Ten wątek jest teraz niewidoczny. Nie będzie się już pojawiać na żadnej liście wątków. Dostęp do wątku możliwy będzie jedynie przez odnośnik bezpośredni."
+
+  login: 
+    not_approved: "Twoje konto nie zostało jeszcze zatwierdzone. Powiadomimy Cię drogą mailową kiedy będziesz mógł się zalogować."
+    incorrect_username_email_or_password: "Nieprawidłowa nazwa użytkownika, email lub hasło."
+    wait_approval: "Dziękujemy za rejestrację. Powiadomimy Cię kiedy Twoje konto zostanie zatwierdzone."
+    active: "Twoje konto jest aktywne."
+    activate_email: "To już prawie koniec! Wysłaliśmy Ci email aktywacyjny na adres <b>%{email}</b>. Postępuj zgodnie z instrukcjami w nim zawartymi aby aktywować swoje konto."
+    errors: "Nie udało się utworzyć konta: %{errors}"
+    not_available: "Niedostępne. Spróbuj %{suggestion}?"
+
+  user:
+    username:
+      short: "musi mieć więcej niż %{min} znaków"
+      long: "musi mieć mniej niż %{max} znaków"
+      characters: "musi składać się wyłącznie z liter i cyfr"
+      unique: "musi być unikalna"
+      blank: "nie może być pusta"
+      must_begin_with_alphanumeric: "musi zaczynać się od litery lub cyfry"
+
+  invite_mailer:
+    subject_template: "[%{site_name}] %{invitee_name} zaprosił Cię do dyskusji na stronie %{site_name}"
+    text_body_template: |
+      %{invitee_name} zaprosił Cię do wątku "%{topic_title}" na stronie %{site_name}.
+
+      Jeśli jesteś zainteresowany kliknij na poniższy odnośnik aby przejść do wątku:
+
+      [Odwiedź %{site_name}][1]
+
+      Zostałeś zaproszony przez zaufanego użytkownika, więc będziesz miał możliwość od razu napisać odpowiedź bez potrzeby logowania.
+
+      [1]: %{invite_link}
+
+  test_mailer:
+    subject_template: "[%{site_name}] Test dostarczenia wiadomości"
+    text_body_template: |
+      To jest testowa wiadomość z forum  %{site_name} . Możesz wejść na forum przez swoją przeglądarkę wchodząc na stronę
+
+      [*%{base_url}*][0]
+
+      Dostarczanie wiadomości może być skomplikowane, ale kilka rzeczy możesz sprawdzić od razu:
+
+      - Upewnij się, że wiesz jak podejrzeć *źródło wiadomości* w swoim programie pocztowym, abyś mógł podejrzeć nagłówki wiadomości co da dostęp do cennych informacji.
+
+      - **WAŻNE:** Czy Twój ISP (dostawa usług internetowych) posiada rekord revDNS który wiąże domenę z której wysyłasz wiadomości z adresem IP z którego wiadomości są wysyłane? Możesz sprawdzić [odwrotny rekord PTR][2] tutaj . Jeśli Twój ISP nie wprowadził poprawnego rekordu PTR, istnieje duże prawdopodobieństwo że Twoje wiadomości nie dotrą do adresatów.
+
+      - Czy rekord SPF Twojej domeny jest ustawiony prawidłowo? Możesz sprawdzić [rekord SPF][1] tutaj.
+
+      - Czy skonfigurowałeś [podpisywanie DKIM][3] w swoim oprogramowaniu pocztowym i wpisałeś klucz publiczny DKIM w swoich rekordach DNS ?
+
+      - Czy sprawdziłeś czy adres IP serwera wysyłającego pocztę nie znajduje się na czarnej liście [not on any email blacklists][4]?
+
+      Mamy nadzieję że ta testowa wiadomość została dostarczona!
+
+      Powodzenia,
+
+      Twoi przyjaciele z %{site_name}.
+
+      [0]: %{base_url}
+      [1]: http://www.kitterman.com/spf/validate.html
+      [2]: http://mxtoolbox.com/SuperTool.aspx
+      [3]: http://www.dkim.org/
+      [4]: http://whatismyipaddress.com/blacklist-check
+      [5]: %{base_url}/unsubscribe
+
+      ----
+
+      <small>W każdej wysyłanej wiadomości email powinna być stopka z odnośnikiem do wyłączenia subskrypcji, więc zobaczmy jak ma to wyglądać. Ta wiadomość została wysłana przez Name z firmy Company, 55 Main Street, Anytown, USA 12345. Jeśli nie chcesz już otrzymywać takich wiadomości, [kliknij aby wyłączyć subskrypcję][5].</small>
+
+  request_access:
+    code: "Kod dostępu"
+    instructions: "Ta strona wymaga hasła, podaj kod dostępu w polu niżej:"
+    enter: "Podaj"
+    incorrect: "kod dostępu jest niepoprawny"
+
+  system_messages:
+    site_password: "Dodatkowo, hasło do strony to  `%{access_password}` jeśli go potrzebujesz."
+
+    post_hidden:
+      subject_template: "%{site_name} Uwaga: Wysyłanie jako ukryty z uwagi na oflagowanie przez społeczność"
+      text_body_template: |
+        Witaj,
+        
+        To jest automatyczna wiadomość od %{site_name} informująca o tym, że poniższy wpis został ukryty z powodu jego oflagowania przez społeczność.
+
+        %{base_url}%{url}
+
+        Twój wpis został ukryty ponieważ został oflagowany przez użytkowników.
+
+        Zwróć uwagę, że zanim wpis został ukryty, oflagowało go kilku różnych użytkowników. Zastanów się jak możesz zmienić wpis aby uniknąć takiej sytuacji.
+
+        Możesz wyedytować wpis po %{edit_delay} minutach i zostanie on automatycznie stanie się on widoczny. Zwiększy to poziom zaufania do Ciebie na forum.
+
+        Jeśli natomiast wpis zostanie ukryty przez użytkowników po raz drugi, powiadomieni zostaną moderatorzy co może skutkować dalszymi krokami (z zawieszeniem konta włącznie).
+
+        Aby uzyskać więcej informacji zobacz nasze [FAQ](/faq).
+
+    usage_tips:
+      text_body_template: |
+        Ta prywatna wiadomość zawiera kilka wskazówek by umożliwić Ci szybki start:
+
+        ### Po prostu przewijaj
+
+        Nie ma następnej strony ani numerów stron, aby kontynuować czytanie po prostu przewijaj stronę a pojawi się treść!
+
+        W miarę pojawiania się kolejnych odpowiedzi będą one automatycznie umieszczane na dole wątku. Nie musisz odświeżać strony lub ponownie wchodzić do wątku aby zobaczyć nowe wpisy.
+
+        ### Jak napisać odpowiedź?
+
+        - Aby odpowiedzieć na konkretny wpis użyj przycisku Odpowiedz pod danym wpisem.
+
+        - Jeśli chcesz odpowiedzieć odnosząc się do całego tematu dyskusji raczej niż do wypowiedzi konkretnej osoby użyj przycisku Odpowiedz na samym dole strony wątku.
+
+        - Jeśli chcesz poprowadzić dyskusję w innym kierunku ale pozostawić całość powiązaną, użyj przycisku Odpowiedz w nowym wątku na prawo od danego wpisu.
+
+        ### Kto ze mną rozmawia?
+
+        Kiedy ktoś odpowiada na Twój wpis, cytuje Twój wpis lub wspomina o Twojej nazwie @username pojawia się powiadomienie na górze strony. Kliknij na liczbie powiadomień aby zobaczyć kto napisał i gdzie. Dołącz do dyskusji!
+
+        - Aby wspomnieć czyjąś nazwę, zacznij pisanie od znaku `@` a pojawi się mechanizm autouzupełniający.
+
+        - Aby zacytować cały wpis, użyj opcji Importuj kolejkę na pasku tworzenia wpisu.
+
+        - Aby zacytować fragment wpisu zaznacz go a następnie kliknij na przycisku Odpowiedz który pojawi się nad zaznaczeniem.
+
+        ### Spójrz na ten wpis!
+
+        Aby powiadomić kogoś że spodobał Ci się jego wpis, kliknij na przycisku Lubię pod wpisem. Jeśli Twoim zdaniem wpis wymaga interwencji naciśnij Oflaguj tym samym powiadamiając moderatorów i innych użytkowników.
+
+        ### Gdzie jestem?
+
+        - Aby powrócić w dowolnym momencie na stronę główną, **kliknij na ikonę w lewym górnym rogu.**
+
+        - Aby wyszukiwać, odwiedzić swoją stronę użytkownika itp. użyj ikon w prawym górnym rogu.
+        - Podczas czytania nowego wątku możesz przejść na samą górę przez kliknięcie na tytule wątku na górze strony. Aby zejść na *sam dół*, kliknij na strzałce w dół na wskaźniku postępu forum na dole strony, lub kliknij na polu ostatniego wpisu w sekcji podsumowania wątku pod pierwszym wpisem.
+
+    welcome_approved:
+      subject_template: "Konto zatwierdzono na stronie %{site_name}!"
+      text_body_template: |
+        Gratulacje!
+
+        Zostałeś zatwierdzony jako członek %{site_name}, witamy na naszym forum!
+
+        %{new_user_tips}
+
+        Uważamy, że [reguły kulturalnej dyskusji](/faq) zawsze obowiązują.
+
+        Miłego czytania!
+
+    welcome_user:
+      subject_template: "Witamy na stronie %{site_name}!"
+      text_body_template: |
+        Witaj!
+
+        Dziękujemy za dołączenie do %{site_name} i witamy na naszym forum!
+
+        %{new_user_tips}
+
+        Uważamy, że [reguły kulturalnej dyskusji](/faq) zawsze obowiązują.
+
+        Miłego czytania!
+
+    welcome_invite:
+      subject_template: "Witaj na stronie %{site_name}!"
+      text_body_template: |
+        Dziękujemy za przyjęcie zaproszenia na stronę %{site_name} i witamy na naszym forum!
+
+        Nadaliśmy Ci nazwę użytkownika: **%{username}**, ale możesz ją zmienić w dowolnym momencie odwiedzając  swój [profil użytkownika][prefs].
+
+        Aby się zalogować masz dwie możliwość:
+
+        1. Użyj konta Facebook, Google, Twitter, lub wielu innych obsługiwanych, jak długo konto na danym serwisie bazuje na **tym samym adresie e-mail** na który otrzymałeś zaproszenie na tą stronę. W innym przypadku nie będziemy wiedzieć że "Ty to Ty"!
+
+        2. Utwórz niepowtarzalne hasło dla strony %{site_name} w swoim [profilu użytkownika][prefs], a następnie zaloguj się z pomocą tego hasła.
+
+        %{site_password}
+
+        %{new_user_tips}
+
+        Uważamy, że [reguły kulturalnej dyskusji](/faq) zawsze obowiązują.
+
+        Miłego czytania!
+
+        [prefs]: %{user_preferences_url}
+
+    flag_threshold_reached:
+       subject_template: "Wysyłanie jako ukryty z uwagi na oflagowanie przez społeczność"
+       text_body_template: |
+         Hello,
+
+         To jest automatyczna wiadomość od (Community Name) informująca o tym, że poniższy wpis został ukryty z powodu jego oflagowania przez społeczność:
+
+         (tutaj znajduje się pole one box z oflagowanym wpisem)
+
+         Twój wpis został ukryty przez flagę ustawioną z powodu:
+
+         > (tutaj znajduje się flaga z największą ilością głosów wraz z krótkim opisem podanym przy oflagowywaniu oraz odnośnikiem. Liczba głosów nie jest wyświetlana.)
+
+         Zwróć uwagę, że zanim wpis został ukryty, oflagowało go kilku różnych użytkowników. Zastanów się jak możesz zmienić wpis aby uniknąć takiej sytuacji.
+
+        Możesz wyedytować wpis po (x) minutach i zostanie on automatycznie stanie się on widoczny. Zwiększy to poziom zaufania do Ciebie na forum.
+
+         Jeśli natomiast wpis zostanie ukryty przez użytkowników po raz drugi, powiadomieni zostaną moderatorzy co może skutkować dalszymi krokami (z zawieszeniem konta włącznie).
+
+        Aby uzyskać więcej informacji zobacz nasze [FAQ](/faq).
+
+
+    export_succeeded:
+      subject_template: "Eksport zakończony"
+      text_body_template: "Operacja eksportu zakończona sukcesem."
+
+    import_succeeded:
+      subject_template: "Import zakończony"
+      text_body_template: "Operacja importu zakończona pomyślnie."
+
+  unsubscribe_link: "Jeśli nie chcesz otrzymywać tych wiadomości, odwiedź stronę [preferencje użytkownika](%{user_preferences_url})."
+
+  user_notifications:
+    unsubscribe: 
+      title: "Wyłącz subskrypcję"
+      description: "Nie chcesz otrzymywać tych wiadomości? Nie ma sprawy! Kliknij na poniższy odnośnik aby od razu wyłączyć subskrypcję:"
+
+    user_invited_to_private_message:
+      subject_template: "[%{site_name}] %{username} zaprosił Cię do prywatnej konwersacji '%{topic_title}'"
+      text_body_template: |
+        %{username} zaprosił Cię do prywatnej konwersacji '%{topic_title}' na stronie %{site_name}:
+
+        Kliknij na ten odnośnik aby zobaczyć wątek: %{base_url}%{url}
+
+    user_replied:
+      subject_template: "[%{site_name}] %{username} odpowiedział na Twój wpis w wątku '%{topic_title}'"
+      text_body_template: |
+        %{username} Odpowiedział na Twój wpis w wątku '%{topic_title}' na stronie %{site_name}:
+
+        ---
+        %{message}
+
+        --- 
+        Kliknij na ten odnośnik aby odpowiedzieć: %{base_url}%{url}
+
+    user_quoted:
+      subject_template: "[%{site_name}] %{username} zacytował Ciebie w wątku '%{topic_title}'"
+      text_body_template: |
+        %{username} zacytował Ciebie w wątku '%{topic_title}' na stronie %{site_name}:
+
+        ---
+        %{message}
+
+        --- 
+        Kliknij na ten odnośnik aby odpowiedzieć: %{base_url}%{url}
+
+    user_mentioned:
+      subject_template: "[%{site_name}] %{username} wspomniał o Tobie w wątku '%{topic_title}'"
+      text_body_template: |
+        %{username} wspomniał o Tobie w wątku '%{topic_title}' na stronie %{site_name}:
+
+        ---
+        %{message}
+
+        --- 
+        Kliknij na ten odnośnik aby odpowiedzieć: %{base_url}%{url}
+
+
+    digest:
+      why: "Oto krótkie podsumowanie tego co działo się na stronie %{site_link} od Twoich ostatnich odwiedzin %{last_seen_at}."
+      subject_template: "[%{site_name}] Aktywność na forum dla %{date}"
+      new_activity: "Nowa aktywność w Twoich wątkach i wpisach:"
+      new_topics: "Nowe wątki:"
+      unsubscribe: "Ta wiadomość z podsumowaniem jest wysyłana automatycznie ze strony %{site_link} jeśli nie odwiedziałeś nas przez 7 dni.\nIf Jeśli nie chcesz otrzymywać jej w przyszłości kliknij na %{unsubscribe_link}."
+
+    private_message:
+      subject_template: "[%{site_name}] %{subject_prefix}%{topic_title}"
+      text_body_template: |
+        %{from} wysłał Ci prywatną wiadomość
+
+        ---
+        %{message}
+
+        ---
+        Kliknij na ten odnośnik aby odpowiedzieć: %{base_url}%{url}
+
+    forgot_password:
+      subject_template: "[%{site_name}] Reset hasła"
+      text_body_template: |
+        Ktoś wysłał prośbę aby zresetować Twoje hasło na stronie [%{site_name}](%{base_url}).
+        
+        Jeśli to nie byłeś Ty, zignoruj tą wiadomość. 
+        
+        Kliknij na poniższy odnośnik aby ustawić nowe hasło:
+        %{base_url}/users/password-reset/%{email_token}
+
+    authorize_email:
+      subject_template: "[%{site_name}] Potwierdź swój nowy adres email"
+      text_body_template: |
+        Potwierdź swój nowy adres email dla strony %{site_name} przez kliknięcie na poniższym odnośniku:
+        
+        %{base_url}/users/authorize-email/%{email_token}
+
+    signup:
+      subject_template: "[%{site_name}] Aktywuj swoje nowe konto"
+      text_body_template: |
+        Welcome to %{site_name}!
+        
+        Kliknij na ponizszym odnośniku aby potwierdzić i aktywować swoje nowe konto:
+        %{base_url}/users/activate-account/%{email_token}
+
+        Jeśli nie możesz kliknąć na powyższym odnośniku, spróbuj skopiować go i wkleić w pasku adresowym swojej przeglądarki internetowej.
+
+  mothership:
+    access_token_problem: "Prześlij administratorowi: Proszę o zaktualizowanie ustawień strony tak aby zawierały właściwą wartość discourse_org_access_key."
